@@ -28,8 +28,9 @@ var koport = require('ko-port');
 koport.asyncPort(3000)
   .then((port) => {
       // 返回有效port
-      http.createServer(app).listen(port)
-      console.log('listening on port ', port)
+      http.createServer(app).listen(port, function () {
+          console.log('listening on port ', port)
+      })
   })
   .catch((err) => {
       // 返回err
