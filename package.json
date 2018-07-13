@@ -1,0 +1,22 @@
+{
+  "name": "ko-port",
+  "version": "1.0.0",
+  "description": "make sure get an available port on your server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "koport": "bin/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CN-kicoyu/ko-port.git"
+  },
+  "keywords": [
+    "port"
+  ],
+  "author": "kicoyu",
+  "license": "ISC",
+  "homepage": "https://github.com/CN-kicoyu/ko-port#readme"
+}
