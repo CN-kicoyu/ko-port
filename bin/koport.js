@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-const koPort = require('../lib/ko-port.js');
+const koPort = require('../index.js');
 
 module.export = koPort.killPort();
