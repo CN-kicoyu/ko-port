@@ -46,11 +46,11 @@ exports.asyncPort = function (port) {
   })
 }
 
-exports.killPort = function (port) {
+exports.killPort = function (port, isGlobal=false) {
   port = port || process.argv[2];
 
   if (typeof port === 'undefined') {
-    return console.log('port is missing.');
+    return isGlobal ? console.log('port is missing.') : false;
   }
 
   if (typeof Promise !== 'function') {
@@ -62,11 +62,11 @@ exports.killPort = function (port) {
       const match = stdout.split(' ').filter(m => m.length);
       if (match.length) {
         exec(`kill -9 ${match[1]}`, function (err, stdout, stderr) {
-          console.log(`port ${port} was closed.`);
-          resolve();
+          isGlobal && console.log(`port ${port} was closed.`);
+          setTimeout(resolve, 300);
         })
       } else {
-        console.log(`port ${port} is not open.`);
+        isGlobal && console.log(`port ${port} is not open.`);
         resolve();
       }
     })

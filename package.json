@@ -1,6 +1,6 @@
 {
   "name": "ko-port",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "make sure get an available port on your server",
   "main": "index.js",
   "scripts": {
@@ -15,7 +15,8 @@
   },
   "keywords": [
     "ko-port",
-    "port"
+    "port",
+    "pid"
   ],
   "author": "kicoyu",
   "license": "ISC",

@@ -2,13 +2,13 @@
 
 > make sure get an available port on your server
 
-### 支持本地安装
+### 支持本地安装(Local Installation)
 
 ``` bash
 $ npm install ko-port
 ```
 
-### 支持全局安装
+### 支持全局安装(Global Installation)
 
 ``` bash
 $ npm install ko-port -g
@@ -55,7 +55,7 @@ koport.killPort(3000)
   });
 ```
 
-如果是全局安装：
+如果是全局(Global)安装：
 
 ``` bash
 $ koport 3000

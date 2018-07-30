@@ -2,4 +2,4 @@
 
 const koPort = require('../index.js');
 
-module.export = koPort.killPort();
+module.export = koPort.killPort(null, true);
